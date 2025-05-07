@@ -1,0 +1,19 @@
+
+/* body{
+    background-color: lightcoral;
+} */
+
+.SignUpForm{
+    display: flex;
+    justify-content: center;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.cardImage{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
