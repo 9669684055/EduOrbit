@@ -10,9 +10,7 @@ import "./Dashboard.css";
 export default function Dashboard (){
     return (
         <>
-     <nav >
-        <SearchBox/>
-      </nav>
+    
       <Grid container spacing={4} sx={{ padding: 2, marginTop: 10 }}>
  <Grid>
  <Card sx={{ maxWidth: 300 }} className='card'>
