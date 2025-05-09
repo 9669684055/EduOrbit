@@ -16,7 +16,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import "./SearchBox.css";
-
+import { useState } from 'react';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -59,6 +59,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 export default function SearchBox() {
+  const [search , setSearch] = useState("");
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
@@ -103,6 +104,10 @@ export default function SearchBox() {
       <MenuItem onClick={handleMenuClose}>My account</MenuItem>
     </Menu>
   );
+  const handleSearch = (event) => {
+setSearch(event.target.value);
+console.log(event.target.value);
+  }
 
   const mobileMenuId = 'primary-search-account-menu-mobile';
   const renderMobileMenu = (
@@ -187,8 +192,7 @@ export default function SearchBox() {
             </SearchIconWrapper>
             <StyledInputBase
               placeholder="Search…"
-              inputProps={{ 'aria-label': 'search' }}
-            />
+              inputProps={{ 'aria-label': 'search' }} />
           </Search>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>

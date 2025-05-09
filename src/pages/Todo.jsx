@@ -51,7 +51,7 @@ let markAsDone = (id) => {
 }
 
   return (
-    <div className="todo-container">
+    <div className="todo-container" >
         <h1>To-Do List </h1>
       <input placeholder="Enter the task" value={newTodo} onChange={updateTodoValue} />
       <br />
@@ -66,8 +66,8 @@ let markAsDone = (id) => {
             <span style={todo.isDone?{textDecorationLine: "line-through"}:{}}>{todo.text}</span>
             &nbsp;&nbsp;
             &nbsp;&nbsp;
-           <button onClick={() => deleteTodo(todo.id)}>delete</button>
-      <button onClick={() => markAsDone(todo.id)}>Mark as Done</button>
+           <button onClick={() => deleteTodo(todo.id)}><b>Delete</b></button>&nbsp;
+      <button onClick={() => markAsDone(todo.id)}><b>Mark as Done</b></button>
 
             </li>
            ))}

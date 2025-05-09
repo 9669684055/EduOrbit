@@ -1,10 +1,11 @@
-.navbar{
-    display: flex;
-    width: 100%;
-    
-}
+
 
 .card:hover {
     box-shadow: 0 8px 16px rgb(72, 55, 231);
     /* transform: scale(1); */
+  }
+
+  .Main{
+    
+    width: 100vw;
   }

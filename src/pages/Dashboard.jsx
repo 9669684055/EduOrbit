@@ -9,7 +9,7 @@ import "./Dashboard.css";
 
 export default function Dashboard (){
     return (
-        <>
+        <div className='Main'  style={{ backgroundColor: '#f4f4f9' }}>
     
       <Grid container spacing={4} sx={{ padding: 2, marginTop: 10 }}>
  <Grid>
@@ -116,6 +116,6 @@ export default function Dashboard (){
  </Grid>
  
       </Grid>
-        </>
+        </div>
     )
 }
