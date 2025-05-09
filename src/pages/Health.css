@@ -1,0 +1,11 @@
+
+.health{
+    background-color:#a4e9fa;
+    color: rgb(0, 98, 128);
+    height: 100vh;
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

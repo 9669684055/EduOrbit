@@ -20,7 +20,7 @@ export default function Study () {
           component="img"
           className='card-Image'
          height="300px"
-         image="https://sdmntprwestus2.oaiusercontent.com/files/00000000-3d4c-61f8-b5f8-b58eff2edfd5/raw?se=2025-04-29T15%3A36%3A40Z&sp=r&sv=2024-08-04&sr=b&scid=b29d3115-b5aa-5a94-812b-9b93b49ed1d0&skoid=b53ae837-f585-4db7-b46f-2d0322fce5a9&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-29T03%3A10%3A57Z&ske=2025-04-30T03%3A10%3A57Z&sks=b&skv=2024-08-04&sig=/ltNrQwFfJ6w9qm29QLKfpdAVXm3PmQmvnEMgGiBCx4%3D"
+         image="https://t3.ftcdn.net/jpg/03/74/84/90/360_F_374849081_sou5wJtrl5bcYbmo5YMS10bWPcYc5Kln.jpg"
           alt="green iguana"
         />
         <CardContent>
@@ -41,7 +41,7 @@ export default function Study () {
           component="img"
            className='card-Image'
          height="300px"
-         image="https://sdmntprwestus2.oaiusercontent.com/files/00000000-06e8-61f8-9330-103e41fe9237/raw?se=2025-04-29T15%3A36%3A40Z&sp=r&sv=2024-08-04&sr=b&scid=7d7c1883-86a3-5ef9-bec5-339f57d4aa8f&skoid=b53ae837-f585-4db7-b46f-2d0322fce5a9&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-29T03%3A09%3A27Z&ske=2025-04-30T03%3A09%3A27Z&sks=b&skv=2024-08-04&sig=yoUId9M0Q5WSewDWRQu4juYgIHJumgRBdJs1fcTJ2as%3D"
+         image="https://www.cmrit.ac.in/wp-content/uploads/2022/07/how-to-get-into-a-good-engineering-college-in-india.jpg"
           alt="green iguana"
         />
         <CardContent>
