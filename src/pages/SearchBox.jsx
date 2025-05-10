@@ -15,6 +15,7 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
+import Drawer from '@mui/material/Drawer';
 import "./SearchBox.css";
 import { useState } from 'react';
 
@@ -62,6 +63,8 @@ export default function SearchBox() {
   const [search , setSearch] = useState("");
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
+const [drawerOpen, setDrawerOpen] = useState(false);
+
 
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
@@ -168,6 +171,27 @@ console.log(event.target.value);
     position="fixed" 
     sx={{ top: 0, left: 0, right: 0, backgroundColor: 'black' , width:'100%'}}
   >
+    <Drawer
+  anchor="left"
+  open={drawerOpen}
+  onClose={() => setDrawerOpen(false)}
+  
+>
+  <Box
+    sx={{ width: 250 }}
+    role="presentation"
+    onClick={() => setDrawerOpen(false)}
+    onKeyDown={() => setDrawerOpen(false)}
+  >
+    <Typography variant="h6" sx={{ m: 2 }}>
+      Menu
+    </Typography>
+    <MenuItem>Home</MenuItem>
+    <MenuItem>Profile</MenuItem>
+    <MenuItem>Settings</MenuItem>
+  </Box>
+</Drawer>
+
         <Toolbar>
           <IconButton
             size="large"
@@ -175,6 +199,7 @@ console.log(event.target.value);
             color="inherit"
             aria-label="open drawer"
             sx={{ mr: 2 }}
+             onClick={() => setDrawerOpen(true)}
           >
             <MenuIcon />
           </IconButton>
