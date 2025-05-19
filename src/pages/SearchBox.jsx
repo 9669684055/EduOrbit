@@ -18,6 +18,8 @@ import MoreIcon from '@mui/icons-material/MoreVert';
 import Drawer from '@mui/material/Drawer';
 import "./SearchBox.css";
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -186,9 +188,10 @@ console.log(event.target.value);
     <Typography variant="h6" sx={{ m: 2 }}>
       Menu
     </Typography>
-    <MenuItem>Home</MenuItem>
-    <MenuItem>Profile</MenuItem>
-    <MenuItem>Settings</MenuItem>
+<MenuItem component={Link} to="/">Home</MenuItem>
+<MenuItem>Profile</MenuItem>
+<MenuItem>Settings</MenuItem>
+
   </Box>
 </Drawer>
 

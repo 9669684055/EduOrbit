@@ -8,6 +8,7 @@ import CardActionArea from '@mui/material/CardActionArea';
 import './Study.css';
 
 export default function Study () {
+
     return (
     <div className="StudyPage">
         <div className='content'>
