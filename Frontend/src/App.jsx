@@ -1,8 +1,8 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import SearchBox from './pages/SearchBox';
-import Dashboard from './pages/Dashboard';
+import SearchBox from './pages/SearchBox.jsx';
+import Dashboard from './pages/Dashboard.jsx';
 import Study from './pages/Study.jsx';
 import Finance from './pages/Finance.jsx';
 import Todo from "./pages/Todo.jsx";
